@@ -25,7 +25,7 @@ const StartQuiz = () => {
   const [modalContent, setModalContent] = useState("");
   const [openDialog, setOpenDialog] = useState<boolean>(false);
   const [quizQuestions, setQuizQuestions] = useState<any>();
-  //const [numberOfQuestions, setNumberOfQuestions] = useState<number>();
+  const [numberOfQuestions, setNumberOfQuestions] = useState<number>();
 
   const handleClose = () => {
     setOpenDialog(false);

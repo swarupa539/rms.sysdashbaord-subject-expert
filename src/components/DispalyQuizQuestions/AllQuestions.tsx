@@ -90,7 +90,7 @@ const AllQuestions = (props: any) => {
       />
       {quizQuestions.map((question: any, index: any) => {
         switch (question.questionType) {
-          case "Radio":
+          case "SingleChoice":
             return (
               <RadioComponent
                 key={index}
@@ -98,7 +98,7 @@ const AllQuestions = (props: any) => {
                 handleAnswerChange={handleRadioAnswerChange}
               />
             );
-          case "checkbox":
+          case "MultipleChoice":
             return (
               <CheckboxComponent
                 key={index}
@@ -106,7 +106,7 @@ const AllQuestions = (props: any) => {
                 handleCheckboxAnswerChange={handleCheckboxAnswerChange}
               />
             );
-          case "coding":
+          case "Programm":
             return <CodingComponent key={index} question={question} />;
           default:
             return null;
